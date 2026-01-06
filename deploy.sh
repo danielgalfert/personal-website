@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_DIR="/home/deploy/apps/mysite"
+APP_DIR="/home/deploy/apps/personal-website"
 VENV_DIR="$APP_DIR/site_env"
 DJANGO_SETTINGS_MODULE="config.settings.production"   # CHANGE if needed
 GUNICORN_SERVICE="gunicorn"                           # CHANGE if needed
