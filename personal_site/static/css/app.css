@@ -4,8 +4,6 @@
    Squarespace-inspired
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 :root {
   /* Light & Warm Palette */
   --bg: #FAFAF9;
@@ -363,12 +361,8 @@ main {
   animation: textFadeIn 0.8s var(--ease-out) 0.2s both;
 }
 
-.hero-card{
-  background: var(--surface-dark);
-  color: #fff;
-  padding: 20px;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-soft);
+.hero .lead {
+  animation: textFadeIn 0.8s var(--ease-out) 0.3s both;
 }
 
 @keyframes textFadeIn {
@@ -750,6 +744,10 @@ main {
   padding-left: 8px;
 }
 
+.case-block:hover h3 {
+  color: var(--accent);
+}
+
 .case-block h3 {
   margin: 0 0 12px;
   font-size: 18px;
@@ -759,10 +757,11 @@ main {
   transition: color 0.3s var(--ease);
 }
 
-.timeline-meta{
-  color: rgba(20,21,31,0.6);
-  font-size: 13px;
-  margin-bottom: 12px;
+.timeline-meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 16px;
+  font-weight: 400;
 }
 
 .case-block p {
@@ -883,8 +882,9 @@ main {
     width: 100%;
   }
 
-  .hero-cta .btn{
+  .hero-cta .btn {
     width: 100%;
+    justify-content: center;
   }
   
   .card,
@@ -906,9 +906,13 @@ main {
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
-  *::after{
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
   }
 }
