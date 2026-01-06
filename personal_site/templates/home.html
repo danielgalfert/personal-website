@@ -1,12 +1,14 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-<section class="hero hero-cv">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-inner hero-split">
-    <div>
-      <span class="kicker">Graduate • Quantitative Engineering • Data Systems</span>
+<section class="hero hero-compact">
+  <div class="hero-inner hero-compact">
+    <img src="{% static 'img/profile.jpg' %}" alt="Daniel G. Alfert" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="hero-profile-image" style="display: none; background: linear-gradient(135deg, var(--accent), var(--accent-light)); color: white; align-items: center; justify-content: center; font-size: 48px; font-weight: 700; letter-spacing: -0.02em;">DA</div>
+    
+    <div class="hero-content">
+      <span class="kicker">Quantitative Engineer • Data Systems</span>
       <h1 class="h1">Daniel G. Alfert</h1>
       <p class="lead">
         Graduate in Computer Science & Mathematics with a focus on quantitative modelling and software tooling.
@@ -15,158 +17,73 @@
       </p>
 
       <div class="hero-cta">
-        <a class="btn" href="mailto:danielgalfert@gmail.com">danielgalfert@gmail.com</a>
-        <a class="btn secondary" href="tel:+4571877094">+45 71 87 70 94</a>
+        <a class="btn" href="mailto:danielgalfert@gmail.com"><span>Get in touch</span></a>
+        <a class="btn secondary" href="/cv/"><span>View CV</span></a>
       </div>
-    </div>
-
-    <div class="hero-panel">
-      <div class="panel-title">Profile snapshot</div>
-      <ul class="meta-list">
-        <li><span>Focus</span><strong>Quantitative analysis, modelling, and data-driven systems</strong></li>
-        <li><span>Tools</span><strong>Python (NumPy, Pandas, SciPy), SQL, Jupyter workflows</strong></li>
-        <li><span>Strengths</span><strong>Curious, analytical, detail-oriented, strong work ethic</strong></li>
-        <li><span>Domains</span><strong>Energy markets, trading, statistical modelling</strong></li>
-      </ul>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="section-header">
-    <h2 class="h2">Profile</h2>
-    <p class="lead">Quantitative and technically strong graduate motivated by complex data, modelling, and decision-support tooling.</p>
-  </div>
-  <div class="card">
-    <p class="card-text">
-      I bring a background in Computer Science, Mathematics, and statistical modelling, with hands-on experience
-      building reproducible Python pipelines for research and analytics. I enjoy translating abstract models into
-      practical tooling, and I care about correctness, clarity, and maintainable systems.
-    </p>
-  </div>
-</section>
-
-<section class="section" id="experience">
-  <div class="section-header">
-    <h2 class="h2">Work experience</h2>
-    <p class="lead">Software engineering roles with a focus on analytical workflows and reliable tooling.</p>
+    <span class="kicker">Values</span>
+    <h2 class="h2">What drives my work</h2>
+    <p class="lead">The principles that guide how I approach problems, build systems, and collaborate.</p>
   </div>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-role">Software Engineer (Part-time)</div>
-      <div class="timeline-meta">Novo Nordisk Foundation Quantum Computing Programme (NQCP) • Jul 2024 – Aug 2025</div>
-      <ul class="bullet-list">
-        <li>Developed Python-based analytical tools and simulation workflows for data-intensive research projects.</li>
-        <li>Built reproducible pipelines for numerical experiments and statistical analysis.</li>
-        <li>Emphasised correctness, documentation, and maintainability of analytical systems.</li>
-        <li>Collaborated with researchers to translate abstract models into practical tooling.</li>
-      </ul>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">⚡</div>
+      <h3 class="value-title">Attention to Detail</h3>
+      <p class="value-text">
+        Precision matters. I believe that small details compound into significant outcomes, 
+        whether in code, analysis, or system design. Every decision is made with intention.
+      </p>
     </div>
 
-    <div class="timeline-item">
-      <div class="timeline-role">Software Engineering Intern</div>
-      <div class="timeline-meta">Avanade • Oct 2022 – Mar 2023</div>
-      <ul class="bullet-list">
-        <li>Worked with Python and SQL on data-driven solutions in cloud-based environments.</li>
-        <li>Supported analytics and modelling workflows under structured delivery timelines.</li>
-        <li>Gained experience working in regulated and production-oriented settings.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="projects">
-  <div class="section-header">
-    <h2 class="h2">Selected quantitative projects</h2>
-    <p class="lead">Research and analytical projects grounded in statistical discipline.</p>
-  </div>
-
-  <div class="grid cols-2">
-    <div class="card">
-      <div class="card-title">Statistical Modelling and Simulation</div>
-      <div class="card-text">Master Thesis • University of Copenhagen</div>
-      <ul class="bullet-list compact">
-        <li>Designed statistical models to approximate and analyse noisy systems.</li>
-        <li>Applied Monte Carlo simulation, hypothesis testing, and sensitivity analysis.</li>
-        <li>Built Python pipelines using NumPy, Pandas, and SciPy for numerical analysis.</li>
-      </ul>
+    <div class="value-card">
+      <div class="value-icon">🔬</div>
+      <h3 class="value-title">Rigorous Validation</h3>
+      <p class="value-text">
+        I validate assumptions, test hypotheses, and verify outcomes. Results must be 
+        reproducible, explainable, and trustworthy—especially when stakes are high.
+      </p>
     </div>
 
-    <div class="card">
-      <div class="card-title">Data Analysis and Signal Exploration</div>
-      <div class="card-text">Academic and Personal Projects</div>
-      <ul class="bullet-list compact">
-        <li>Exploratory data analysis on structured datasets to identify patterns and correlations.</li>
-        <li>Built analytical tools to test assumptions and compare scenarios.</li>
-        <li>Focused on interpretability and robustness of results.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="education">
-  <div class="section-header">
-    <h2 class="h2">Education</h2>
-    <p class="lead">Quantitative foundations in statistics, modelling, and algorithms.</p>
-  </div>
-
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-role">MSc in Quantum Information Science</div>
-      <div class="timeline-meta">University of Copenhagen • 2023 – 2025</div>
-      <ul class="bullet-list compact">
-        <li>Focus on statistics, modelling, numerical methods, and data analysis.</li>
-        <li>Master thesis centred on statistical approximation and uncertainty analysis.</li>
-      </ul>
+    <div class="value-card">
+      <div class="value-icon">🎯</div>
+      <h3 class="value-title">Pragmatic Excellence</h3>
+      <p class="value-text">
+        Balance between ideal solutions and practical constraints. I optimize for correctness 
+        and maintainability while respecting deadlines and resource limitations.
+      </p>
     </div>
 
-    <div class="timeline-item">
-      <div class="timeline-role">Double BSc in Computer Science & Mathematics</div>
-      <div class="timeline-meta">University of Granada • 2017 – 2023</div>
-      <ul class="bullet-list compact">
-        <li>Coursework in probability, statistics, linear algebra, optimisation, and algorithms.</li>
-        <li>Developed strong analytical problem-solving skills.</li>
-      </ul>
+    <div class="value-card">
+      <div class="value-icon">📊</div>
+      <h3 class="value-title">Data-Driven Decisions</h3>
+      <p class="value-text">
+        Evidence over intuition. I build systems that surface insights, support decision-making, 
+        and make uncertainty explicit rather than hidden.
+      </p>
     </div>
-  </div>
-</section>
 
-<section class="section" id="skills">
-  <div class="section-header">
-    <h2 class="h2">Skills</h2>
-    <p class="lead">Tools and strengths that support modelling, analytics, and delivery.</p>
-  </div>
+    <div class="value-card">
+      <div class="value-icon">🔧</div>
+      <h3 class="value-title">Clean, Maintainable Code</h3>
+      <p class="value-text">
+        Code is read more than written. I write for clarity, document assumptions, and design 
+        systems that are easy to understand, modify, and extend.
+      </p>
+    </div>
 
-  <div class="grid cols-2">
-    <div class="card">
-      <div class="card-title">Quantitative Analysis & Modelling</div>
-      <div class="card-text">Statistical modelling, Monte Carlo simulation, hypothesis testing, scenario analysis, numerical methods.</div>
-    </div>
-    <div class="card">
-      <div class="card-title">Programming & Data</div>
-      <div class="card-text">Python (NumPy, Pandas, SciPy), SQL (joins, transformations), Jupyter-based analysis and tooling.</div>
-    </div>
-    <div class="card">
-      <div class="card-title">Software Engineering</div>
-      <div class="card-text">Modular design, reproducible workflows, documentation, clean and maintainable code.</div>
-    </div>
-    <div class="card">
-      <div class="card-title">Professional Strengths</div>
-      <div class="card-text">Curious, analytical, detail-oriented, strong work ethic, comfortable learning new domains quickly.</div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="languages">
-  <div class="section-header">
-    <h2 class="h2">Languages</h2>
-    <p class="lead">Communication across technical and collaborative environments.</p>
-  </div>
-  <div class="card">
-    <div class="pill-row">
-      <span class="pill">English — Fluent</span>
-      <span class="pill">Spanish — Native</span>
+    <div class="value-card">
+      <div class="value-icon">🤝</div>
+      <h3 class="value-title">Collaborative Clarity</h3>
+      <p class="value-text">
+        Communication is as important as code. I make reasoning explicit, document decisions, 
+        and ensure knowledge transfers smoothly between team members.
+      </p>
     </div>
   </div>
 </section>

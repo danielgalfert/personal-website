@@ -10,37 +10,23 @@
   <link rel="canonical" href="{% if seo and seo.canonical %}{{ seo.canonical }}{% else %}{{ request.build_absolute_uri }}{% endif %}">
 
   <link rel="stylesheet" href="{% static 'css/app.css' %}">
-  <style>
-    /* Smooth scroll behavior */
-    html {
-      scroll-behavior: smooth;
-    }
-    
-    /* Focus visible styles for keyboard navigation */
-    *:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-    }
-  </style>
 </head>
 
 <body>
   <header class="site-header">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="/">
-          <span class="brand-mark"></span>
-          <span class="brand-name">Daniel G. Alfert</span>
-        </a>
+    <nav class="nav">
+      <a class="brand" href="/">
+        <span class="brand-mark">DA</span>
+        <span class="brand-name">Daniel G. Alfert</span>
+      </a>
 
-        <div class="nav-links">
-          <a href="/projects/">Projects</a>
-          <a href="/about/">About</a>
-          <a href="/cv/" class="cta">CV</a>
-          <a href="/contact/">Contact</a>
-        </div>
-      </nav>
-    </div>
+      <div class="nav-links">
+        <a href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/cv/" class="cta">CV</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <main>

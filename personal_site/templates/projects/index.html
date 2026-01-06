@@ -3,7 +3,7 @@
 {% block content %}
 <section class="section" style="margin-top:0;">
   <span class="kicker">Projects</span>
-  <h1 class="h1" style="font-size:40px;">Case studies and proof of work.</h1>
+  <h1 class="h1">Case studies and proof of work.</h1>
   <p class="lead">
     Selected work written as short case studies: objective, approach, validation, and outcome.
   </p>
@@ -13,8 +13,8 @@
   <div class="grid cols-3">
     {% for p in projects %}
       <a class="card lift" href="/projects/{{ p.slug }}/">
-        <div class="card-title">{{ p.title }}</div>
-        <div class="card-text">{{ p.summary }}</div>
+        <h3 class="card-title">{{ p.title }}</h3>
+        <p class="card-text">{{ p.summary }}</p>
         {% if p.tags %}
           <div class="pill-row">
             {% for t in p.tags %}<span class="pill">{{ t }}</span>{% endfor %}
