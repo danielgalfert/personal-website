@@ -3,28 +3,168 @@
 
 {% block content %}
 <div class="reading">
-  <section class="section" style="margin-top:0;">
-    <span class="kicker">CV</span>
-    <h1 class="h1" style="font-size:40px;">Curriculum Vitae</h1>
-    <p class="lead">A detailed overview of education, experience, and technical background.</p>
+  <section class="hero hero-cv">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner hero-split">
+      <div>
+        <span class="kicker">CV</span>
+        <h1 class="h1">Daniel G. Alfert</h1>
+        <p class="lead">Graduate in Computer Science & Mathematics (Quantum Information).</p>
 
-    <div class="hero-cta" style="margin-top:18px;">
-      <a class="btn" href="{% static 'docs/CV.pdf' %}" target="_blank" rel="noopener">Open PDF</a>
-      <a class="btn secondary" href="{% static 'docs/CV.pdf' %}" download>Download</a>
+        <div class="hero-cta">
+          <a class="btn" href="mailto:danielgalfert@gmail.com">danielgalfert@gmail.com</a>
+          <a class="btn secondary" href="tel:+4571877094">+45 71 87 70 94</a>
+          <a class="btn secondary" href="{% static 'docs/CV.pdf' %}" target="_blank" rel="noopener">Open PDF</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-title">Focus areas</div>
+        <ul class="meta-list">
+          <li><span>Interests</span><strong>Energy markets, trading, statistical analysis</strong></li>
+          <li><span>Tools</span><strong>Python, NumPy, Pandas, SciPy, SQL</strong></li>
+          <li><span>Methods</span><strong>Monte Carlo simulation, hypothesis testing, scenario analysis</strong></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="card" style="padding:0; overflow:hidden;">
-      <iframe
-        src="{% static 'docs/CV.pdf' %}#view=FitH"
-        style="width:100%; height:80vh; border:0;"
-        title="Daniel Galfert CV">
-      </iframe>
+    <div class="section-header">
+      <h2 class="h2">Profile</h2>
+      <p class="lead">Quantitative and technically strong graduate motivated by complex data and decision-support tooling.</p>
+    </div>
+    <div class="card">
+      <p class="card-text">
+        I am motivated by analysing complex data, building models, and developing software tools that support
+        decision-making in dynamic, data-driven environments. I bring strong quantitative foundations, Python-based
+        tooling experience, and a high level of curiosity and work ethic.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="h2">Work experience</h2>
+      <p class="lead">Quantitative tooling, reproducible pipelines, and analytical systems.</p>
     </div>
 
-    <div style="margin-top:12px; color: var(--muted); font-size:13px;">
-      If the embedded preview does not load in your browser, use “Open PDF”.
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-role">Software Engineer (Part-time)</div>
+        <div class="timeline-meta">Novo Nordisk Foundation Quantum Computing Programme (NQCP) • Jul 2024 – Aug 2025</div>
+        <ul class="bullet-list">
+          <li>Developed Python-based analytical tools and simulation workflows for data-intensive research projects.</li>
+          <li>Built reproducible pipelines for numerical experiments and statistical analysis.</li>
+          <li>Emphasised correctness, documentation, and maintainability of analytical systems.</li>
+          <li>Collaborated with researchers to translate abstract models into practical tooling.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Software Engineering Intern</div>
+        <div class="timeline-meta">Avanade • Oct 2022 – Mar 2023</div>
+        <ul class="bullet-list">
+          <li>Worked with Python and SQL on data-driven solutions in cloud-based environments.</li>
+          <li>Supported analytics and modelling workflows under structured delivery timelines.</li>
+          <li>Gained experience working in regulated and production-oriented settings.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="h2">Selected quantitative projects</h2>
+      <p class="lead">Statistical modelling and signal exploration.</p>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="card-title">Statistical Modelling and Simulation</div>
+        <div class="card-text">Master Thesis • University of Copenhagen</div>
+        <ul class="bullet-list compact">
+          <li>Designed statistical models to approximate and analyse noisy systems.</li>
+          <li>Applied Monte Carlo simulation, hypothesis testing, and sensitivity analysis.</li>
+          <li>Built Python pipelines using NumPy, Pandas, and SciPy for numerical analysis.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Data Analysis and Signal Exploration</div>
+        <div class="card-text">Academic and Personal Projects</div>
+        <ul class="bullet-list compact">
+          <li>Exploratory data analysis on structured datasets to identify patterns and correlations.</li>
+          <li>Built analytical tools to test assumptions and compare scenarios.</li>
+          <li>Focused on interpretability and robustness of results.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="h2">Education</h2>
+      <p class="lead">Academic grounding in modelling, statistics, and algorithms.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-role">MSc in Quantum Information Science</div>
+        <div class="timeline-meta">University of Copenhagen • 2023 – 2025</div>
+        <ul class="bullet-list compact">
+          <li>Focus on statistics, modelling, numerical methods, and data analysis.</li>
+          <li>Master thesis centred on statistical approximation and uncertainty analysis.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Double BSc in Computer Science & Mathematics</div>
+        <div class="timeline-meta">University of Granada • 2017 – 2023</div>
+        <ul class="bullet-list compact">
+          <li>Coursework in probability, statistics, linear algebra, optimisation, and algorithms.</li>
+          <li>Developed strong analytical problem-solving skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="h2">Skills & strengths</h2>
+      <p class="lead">Tooling, modelling, and professional strengths.</p>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="card-title">Quantitative Analysis & Modelling</div>
+        <div class="card-text">Statistical modelling, Monte Carlo simulation, hypothesis testing, scenario analysis, numerical methods.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Programming & Data</div>
+        <div class="card-text">Python (NumPy, Pandas, SciPy), SQL (joins, transformations), Jupyter-based analysis and tooling.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Software Engineering</div>
+        <div class="card-text">Modular design, reproducible workflows, documentation, clean and maintainable code.</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Professional Strengths</div>
+        <div class="card-text">Curious, analytical, detail-oriented, strong work ethic, comfortable learning new domains quickly.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="h2">Languages</h2>
+      <p class="lead">Fluent communication across teams.</p>
+    </div>
+    <div class="card">
+      <div class="pill-row">
+        <span class="pill">English — Fluent</span>
+        <span class="pill">Spanish — Native</span>
+      </div>
     </div>
   </section>
 </div>
