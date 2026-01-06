@@ -3,28 +3,28 @@
 
 {% block content %}
 <div class="reading">
-  <section class="hero hero-minimal">
-    <div class="hero-grid">
-      <div class="hero-copy">
+  <section class="hero hero-cv">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner hero-split">
+      <div>
         <span class="kicker">CV</span>
         <h1 class="h1">Daniel G. Alfert</h1>
-        <p class="lead">Graduate (Computer Science & Mathematics, Quantum Information).</p>
+        <p class="lead">Graduate in Computer Science & Mathematics (Quantum Information).</p>
+
         <div class="hero-cta">
           <a class="btn" href="mailto:danielgalfert@gmail.com">danielgalfert@gmail.com</a>
           <a class="btn secondary" href="tel:+4571877094">+45 71 87 70 94</a>
-          <a class="btn ghost" href="{% static 'docs/CV.pdf' %}" target="_blank" rel="noopener">Open PDF</a>
+          <a class="btn secondary" href="{% static 'docs/CV.pdf' %}" target="_blank" rel="noopener">Open PDF</a>
         </div>
       </div>
-      <div class="hero-side">
-        <div class="photo-placeholder" aria-label="Portrait placeholder"></div>
-        <div class="hero-card">
-          <div class="card-title">Focus areas</div>
-          <ul class="meta-list">
-            <li><span>Interests</span><strong>Energy markets, trading, statistical analysis</strong></li>
-            <li><span>Methods</span><strong>Monte Carlo simulation, hypothesis testing</strong></li>
-            <li><span>Tools</span><strong>Python, NumPy, Pandas, SciPy, SQL</strong></li>
-          </ul>
-        </div>
+
+      <div class="hero-panel">
+        <div class="panel-title">Focus areas</div>
+        <ul class="meta-list">
+          <li><span>Interests</span><strong>Energy markets, trading, statistical analysis</strong></li>
+          <li><span>Tools</span><strong>Python, NumPy, Pandas, SciPy, SQL</strong></li>
+          <li><span>Methods</span><strong>Monte Carlo simulation, hypothesis testing, scenario analysis</strong></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -32,13 +32,13 @@
   <section class="section">
     <div class="section-header">
       <h2 class="h2">Profile</h2>
-      <p class="lead">Quantitative graduate motivated by complex data and decision-support tooling.</p>
+      <p class="lead">Quantitative and technically strong graduate motivated by complex data and decision-support tooling.</p>
     </div>
     <div class="card">
       <p class="card-text">
         I am motivated by analysing complex data, building models, and developing software tools that support
-        decision-making in dynamic and data-driven environments. I bring strong quantitative foundations,
-        Python-based tooling experience, and a high level of curiosity and work ethic.
+        decision-making in dynamic, data-driven environments. I bring strong quantitative foundations, Python-based
+        tooling experience, and a high level of curiosity and work ethic.
       </p>
     </div>
   </section>
@@ -46,11 +46,11 @@
   <section class="section">
     <div class="section-header">
       <h2 class="h2">Work experience</h2>
-      <p class="lead">Python tooling, reproducible pipelines, and analytical systems.</p>
+      <p class="lead">Quantitative tooling, reproducible pipelines, and analytical systems.</p>
     </div>
 
     <div class="timeline">
-      <article class="timeline-item">
+      <div class="timeline-item">
         <div class="timeline-role">Software Engineer (Part-time)</div>
         <div class="timeline-meta">Novo Nordisk Foundation Quantum Computing Programme (NQCP) • Jul 2024 – Aug 2025</div>
         <ul class="bullet-list">
@@ -59,9 +59,9 @@
           <li>Emphasised correctness, documentation, and maintainability of analytical systems.</li>
           <li>Collaborated with researchers to translate abstract models into practical tooling.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="timeline-item">
+      <div class="timeline-item">
         <div class="timeline-role">Software Engineering Intern</div>
         <div class="timeline-meta">Avanade • Oct 2022 – Mar 2023</div>
         <ul class="bullet-list">
@@ -69,7 +69,7 @@
           <li>Supported analytics and modelling workflows under structured delivery timelines.</li>
           <li>Gained experience working in regulated and production-oriented settings.</li>
         </ul>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -86,7 +86,7 @@
         <ul class="bullet-list compact">
           <li>Designed statistical models to approximate and analyse noisy systems.</li>
           <li>Applied Monte Carlo simulation, hypothesis testing, and sensitivity analysis.</li>
-          <li>Built Python pipelines using NumPy, Pandas, SciPy for numerical analysis.</li>
+          <li>Built Python pipelines using NumPy, Pandas, and SciPy for numerical analysis.</li>
         </ul>
       </div>
 
@@ -109,23 +109,23 @@
     </div>
 
     <div class="timeline">
-      <article class="timeline-item">
+      <div class="timeline-item">
         <div class="timeline-role">MSc in Quantum Information Science</div>
         <div class="timeline-meta">University of Copenhagen • 2023 – 2025</div>
         <ul class="bullet-list compact">
           <li>Focus on statistics, modelling, numerical methods, and data analysis.</li>
           <li>Master thesis centred on statistical approximation and uncertainty analysis.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="timeline-item">
+      <div class="timeline-item">
         <div class="timeline-role">Double BSc in Computer Science & Mathematics</div>
         <div class="timeline-meta">University of Granada • 2017 – 2023</div>
         <ul class="bullet-list compact">
           <li>Coursework in probability, statistics, linear algebra, optimisation, and algorithms.</li>
           <li>Developed strong analytical problem-solving skills.</li>
         </ul>
-      </article>
+      </div>
     </div>
   </section>
 
