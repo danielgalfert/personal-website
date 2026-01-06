@@ -9,14 +9,15 @@
   <meta name="description" content="{% if seo and seo.description %}{{ seo.description }}{% else %}Generalist software engineer with quantitative depth. Backend, data-driven systems, modeling, and production reliability.{% endif %}">
   <link rel="canonical" href="{% if seo and seo.canonical %}{{ seo.canonical }}{% else %}{{ request.build_absolute_uri }}{% endif %}">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/app.css' %}">
   <style>
-    /* Smooth scroll behavior */
     html {
       scroll-behavior: smooth;
     }
-    
-    /* Focus visible styles for keyboard navigation */
+
     *:focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 2px;
