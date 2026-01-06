@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if seo and seo.title %}{{ seo.title }}{% else %}Daniel G. Alfert{% endif %}</title>
+  <meta name="description" content="{% if seo and seo.description %}{{ seo.description }}{% else %}Generalist software engineer with quantitative depth. Backend, data-driven systems, modeling, and production reliability.{% endif %}">
+  <link rel="canonical" href="{% if seo and seo.canonical %}{{ seo.canonical }}{% else %}{{ request.build_absolute_uri }}{% endif %}">
+
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+  <style>
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Focus visible styles for keyboard navigation */
+    *:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="/">
+          <span class="brand-mark"></span>
+          <span class="brand-name">Daniel G. Alfert</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="/projects/">Projects</a>
+          <a href="/about/">About</a>
+          <a href="/cv/" class="cta">CV</a>
+          <a href="/contact/">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© {% now "Y" %} Daniel G. Alfert. Built with Django on AWS.</div>
+    </div>
+  </footer>
+</body>
+</html>

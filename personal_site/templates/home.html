@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-media"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-inner">
+    <span class="kicker">Engineering • Data • Modeling • Production</span>
+
+    <h1 class="h1">I build reliable, data-driven systems with engineering discipline and quantitative reasoning.</h1>
+
+    <p class="lead">
+      I work across backend development, analytics, cloud, and research-grade modeling.
+      My approach is pragmatic rigor: explicit assumptions, measurable validation, and solutions that others can maintain.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn" href="/projects/">View Projects</a>
+      <a class="btn secondary" href="/cv/">View CV</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="h2">Capabilities</h2>
+  <p class="lead">A generalist profile, anchored in execution and careful reasoning.</p>
+
+  <div class="grid cols-3" style="margin-top:16px;">
+    <div class="card">
+      <div class="card-title">Build</div>
+      <div class="card-text">
+        Backend services, automation, and analytical tooling designed for maintainability and handover-ready documentation.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Analyze</div>
+      <div class="card-text">
+        Statistical modeling, simulation, and evaluation discipline—turning data into insight without over-claiming.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Operate</div>
+      <div class="card-text">
+        Production awareness: deploy, monitor, debug, and iterate with reliability in mind, including constrained environments.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="h2">Featured projects</h2>
+  <p class="lead">Case studies: objective, approach, validation, and outcome.</p>
+
+  <div class="grid cols-3" style="margin-top:16px;">
+    {% for p in featured_projects %}
+      <a class="card lift" href="/projects/{{ p.slug }}/">
+        <div class="card-title">{{ p.title }}</div>
+        <div class="card-text">{{ p.summary }}</div>
+        {% if p.tags %}
+          <div class="pill-row">
+            {% for t in p.tags %}<span class="pill">{{ t }}</span>{% endfor %}
+          </div>
+        {% endif %}
+      </a>
+    {% endfor %}
+  </div>
+
+  <div style="margin-top:18px;">
+    <a class="btn secondary" href="/projects/">See all projects</a>
+  </div>
+</section>
+{% endblock %}

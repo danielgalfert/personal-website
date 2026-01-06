@@ -1,0 +1,70 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+
+    <title>{{ seo.title|default:"Daniel G. Alfert" }}</title>
+    <meta name="description" content="{{ seo.description|default:'' }}"/>
+    <link rel="canonical" href="{{ seo.canonical|default:'' }}"/>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ seo.title|default:'Daniel G. Alfert' }}"/>
+    <meta property="og:description" content="{{ seo.description|default:'' }}"/>
+    <meta property="og:url" content="{{ seo.canonical|default:'' }}"/>
+    <meta property="og:site_name" content="Daniel G. Alfert"/>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+
+    <link rel="stylesheet" href="{% static 'css/app.css' %}"/>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"WebSite",
+      "name":"Daniel G. Alfert",
+      "url":"https://www.danielgalfert.com"
+    }
+    </script>
+
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+      }
+      .enter { animation: enter 360ms cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .lift { transition: transform 180ms ease, border-color 180ms ease, background 180ms ease; }
+      .lift:hover { transform: translateY(-3px); }
+      .ring:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(119,167,255,.35); border-radius: 12px; }
+    </style>
+  </head>
+
+  <body>
+    <header class="header enter">
+      <div class="container header-inner">
+        <a class="brand ring" href="/">Daniel G. Alfert</a>
+        <nav class="nav">
+          <a class="nav-link ring" href="/projects/">Projects</a>
+          <a class="nav-link ring" href="/writing/">Writing</a>
+          <a class="nav-link ring" href="/about/">About</a>
+          <a class="nav-link ring" href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container enter">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© {% now "Y" %} Daniel G. Alfert. Built with Django, deployed on AWS.</p>
+      </div>
+    </footer>
+  </body>
+</html>

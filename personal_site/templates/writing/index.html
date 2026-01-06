@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+  <h1 class="h1">Writing</h1>
+
+  <p class="lead">
+    Short technical writing on how I approach systems, data, and modeling problems.
+    I use writing primarily as a tool for clarity: to make assumptions explicit and
+    reasoning inspectable.
+  </p>
+
+  <div class="grid cols-2 gap">
+    <div class="card">
+      <div class="card-title">Reproducibility as an engineering constraint</div>
+      <div class="card-text">
+        Why reproducibility is not a “nice to have” in analytical systems, and how small
+        engineering decisions compound into long-term reliability or technical debt.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Validation beyond metrics</div>
+      <div class="card-text">
+        A discussion of evaluation discipline: what metrics can and cannot tell you,
+        how to reason about uncertainty, and when apparent improvements are misleading.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Bridging research code and production systems</div>
+      <div class="card-text">
+        Lessons learned from turning exploratory or research-oriented code into systems
+        that can be deployed, monitored, and handed over to others.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Designing for constrained environments</div>
+      <div class="card-text">
+        How limitations—compute, data quality, latency, organizational constraints—shape
+        better system design when taken seriously from the start.
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:24px;">
+    <div class="card-text">
+      Longer or more detailed pieces will be added selectively. I prefer fewer,
+      higher-quality explanations over frequent updates.
+    </div>
+  </div>
+</section>
+{% endblock %}

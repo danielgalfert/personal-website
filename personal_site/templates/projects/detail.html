@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="reading">
+  <section class="section" style="margin-top:0;">
+    <span class="kicker">Project</span>
+    <h1 class="h1" style="font-size:40px;">{{ project.title }}</h1>
+    <p class="lead">{{ project.summary }}</p>
+
+    {% if project.tags %}
+      <div class="case-meta">
+        {% for t in project.tags %}<span class="pill">{{ t }}</span>{% endfor %}
+      </div>
+    {% endif %}
+  </section>
+
+  <section class="section">
+    <div class="card">
+      <div class="case-block">
+        <h3>Problem</h3>
+        <p>{{ project.problem }}</p>
+      </div>
+
+      <div class="case-block">
+        <h3>Approach</h3>
+        <p>{{ project.approach }}</p>
+      </div>
+
+      <div class="case-block">
+        <h3>Validation</h3>
+        <p>{{ project.validation }}</p>
+      </div>
+
+      <div class="case-block">
+        <h3>Outcome</h3>
+        <p>{{ project.outcome }}</p>
+      </div>
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="btn secondary" href="/projects/">Back to projects</a>
+    </div>
+  </section>
+</div>
+{% endblock %}
