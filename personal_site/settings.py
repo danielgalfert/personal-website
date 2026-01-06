@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-vo#--jay$m)df&z=#)&j()%&c#=lxnt97tfe66fgclm+3r(x0g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["danielgalfert.com", "www.danielgalfert.com"]
+ALLOWED_HOSTS = ["danielgalfert.com", "www.danielgalfert.com",  "127.0.0.1",
+    "localhost"]
 
 TEMPLATES = [
     {
@@ -46,8 +47,7 @@ TEMPLATES = [
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "personal_site" / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
-
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
 
 CSRF_TRUSTED_ORIGINS = [
     "https://danielgalfert.com",
