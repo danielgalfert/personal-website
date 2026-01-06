@@ -1,75 +1,158 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="hero">
-  <div class="hero-media"></div>
-  <div class="hero-overlay"></div>
-
-  <div class="hero-inner">
-    <span class="kicker">Engineering • Data • Modeling • Production</span>
-
-    <h1 class="h1">I build reliable, data-driven systems with engineering discipline and quantitative reasoning.</h1>
-
-    <p class="lead">
-      I work across backend development, analytics, cloud, and research-grade modeling.
-      My approach is pragmatic rigor: explicit assumptions, measurable validation, and solutions that others can maintain.
-    </p>
-
-    <div class="hero-cta">
-      <a class="btn" href="/projects/">View Projects</a>
-      <a class="btn secondary" href="/cv/">View CV</a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <h2 class="h2">Capabilities</h2>
-  <p class="lead">A generalist profile, anchored in execution and careful reasoning.</p>
-
-  <div class="grid cols-3" style="margin-top:16px;">
-    <div class="card">
-      <div class="card-title">Build</div>
-      <div class="card-text">
-        Backend services, automation, and analytical tooling designed for maintainability and handover-ready documentation.
+<section class="hero hero-minimal">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="kicker">Quantitative • Modelling • Software</span>
+      <h1 class="h1">Daniel G. Alfert</h1>
+      <p class="lead">
+        Graduate in Computer Science & Mathematics with a focus on quantitative modelling and data-driven systems.
+        Interested in energy markets and trading, where clean analysis and reliable tooling surface signal and manage risk.
+      </p>
+      <div class="hero-cta">
+        <a class="btn" href="mailto:danielgalfert@gmail.com">danielgalfert@gmail.com</a>
+        <a class="btn secondary" href="tel:+4571877094">+45 71 87 70 94</a>
+        <a class="btn ghost" href="/cv/">Open CV</a>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-title">Analyze</div>
-      <div class="card-text">
-        Statistical modeling, simulation, and evaluation discipline—turning data into insight without over-claiming.
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">Operate</div>
-      <div class="card-text">
-        Production awareness: deploy, monitor, debug, and iterate with reliability in mind, including constrained environments.
+    <div class="hero-side">
+      <div class="photo-placeholder" aria-label="Portrait placeholder"></div>
+      <div class="hero-card">
+        <div class="card-title">Snapshot</div>
+        <ul class="meta-list">
+          <li><span>Focus</span><strong>Statistical modelling, simulation, analysis</strong></li>
+          <li><span>Tools</span><strong>Python, NumPy, Pandas, SciPy, SQL</strong></li>
+          <li><span>Strengths</span><strong>Curious, analytical, detail-oriented</strong></li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <h2 class="h2">Featured projects</h2>
-  <p class="lead">Case studies: objective, approach, validation, and outcome.</p>
-
-  <div class="grid cols-3" style="margin-top:16px;">
-    {% for p in featured_projects %}
-      <a class="card lift" href="/projects/{{ p.slug }}/">
-        <div class="card-title">{{ p.title }}</div>
-        <div class="card-text">{{ p.summary }}</div>
-        {% if p.tags %}
-          <div class="pill-row">
-            {% for t in p.tags %}<span class="pill">{{ t }}</span>{% endfor %}
-          </div>
-        {% endif %}
-      </a>
-    {% endfor %}
+  <div class="section-header">
+    <h2 class="h2">Work experience</h2>
+    <p class="lead">Quantitative tooling and data-intensive workflows.</p>
   </div>
 
-  <div style="margin-top:18px;">
-    <a class="btn secondary" href="/projects/">See all projects</a>
+  <div class="timeline">
+    <article class="timeline-item">
+      <div class="timeline-role">Software Engineer (Part-time)</div>
+      <div class="timeline-meta">Novo Nordisk Foundation Quantum Computing Programme (NQCP) • Jul 2024 – Aug 2025</div>
+      <ul class="bullet-list">
+        <li>Developed Python-based analytical tools and simulation workflows for data-intensive research projects.</li>
+        <li>Built reproducible pipelines for numerical experiments and statistical analysis.</li>
+        <li>Emphasised correctness, documentation, and maintainability of analytical systems.</li>
+        <li>Collaborated with researchers to translate abstract models into practical tooling.</li>
+      </ul>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-role">Software Engineering Intern</div>
+      <div class="timeline-meta">Avanade • Oct 2022 – Mar 2023</div>
+      <ul class="bullet-list">
+        <li>Worked with Python and SQL on data-driven solutions in cloud-based environments.</li>
+        <li>Supported analytics and modelling workflows under structured delivery timelines.</li>
+        <li>Gained experience working in regulated and production-oriented settings.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <h2 class="h2">Selected quantitative projects</h2>
+    <p class="lead">Research grounded in statistical discipline and reproducible analysis.</p>
+  </div>
+
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="card-title">Statistical Modelling and Simulation</div>
+      <div class="card-text">Master Thesis • University of Copenhagen</div>
+      <ul class="bullet-list compact">
+        <li>Designed statistical models to approximate and analyse noisy systems.</li>
+        <li>Applied Monte Carlo simulation, hypothesis testing, and sensitivity analysis.</li>
+        <li>Built Python pipelines using NumPy, Pandas, and SciPy for numerical analysis.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Data Analysis and Signal Exploration</div>
+      <div class="card-text">Academic and Personal Projects</div>
+      <ul class="bullet-list compact">
+        <li>Exploratory data analysis on structured datasets to identify patterns and correlations.</li>
+        <li>Built analytical tools to test assumptions and compare scenarios.</li>
+        <li>Focused on interpretability and robustness of results.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <h2 class="h2">Education</h2>
+    <p class="lead">Strong quantitative foundations across modelling, statistics, and algorithms.</p>
+  </div>
+
+  <div class="timeline">
+    <article class="timeline-item">
+      <div class="timeline-role">MSc in Quantum Information Science</div>
+      <div class="timeline-meta">University of Copenhagen • 2023 – 2025</div>
+      <ul class="bullet-list compact">
+        <li>Focus on statistics, modelling, numerical methods, and data analysis.</li>
+        <li>Master thesis centred on statistical approximation and uncertainty analysis.</li>
+      </ul>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-role">Double BSc in Computer Science & Mathematics</div>
+      <div class="timeline-meta">University of Granada • 2017 – 2023</div>
+      <ul class="bullet-list compact">
+        <li>Coursework in probability, statistics, linear algebra, optimisation, and algorithms.</li>
+        <li>Developed strong analytical problem-solving skills.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <h2 class="h2">Skills</h2>
+    <p class="lead">Quantitative, technical, and professional strengths.</p>
+  </div>
+
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="card-title">Quantitative Analysis & Modelling</div>
+      <div class="card-text">Statistical modelling, Monte Carlo simulation, hypothesis testing, scenario analysis, numerical methods.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Programming & Data</div>
+      <div class="card-text">Python (NumPy, Pandas, SciPy), SQL (joins, transformations), Jupyter-based analysis and tooling.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Software Engineering</div>
+      <div class="card-text">Modular design, reproducible workflows, documentation, clean and maintainable code.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Professional Strengths</div>
+      <div class="card-text">Curious, analytical, detail-oriented, strong work ethic, comfortable learning new domains quickly.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <h2 class="h2">Languages</h2>
+    <p class="lead">Fluent communication in international teams.</p>
+  </div>
+  <div class="card">
+    <div class="pill-row">
+      <span class="pill">English — Fluent</span>
+      <span class="pill">Spanish — Native</span>
+    </div>
   </div>
 </section>
 {% endblock %}
