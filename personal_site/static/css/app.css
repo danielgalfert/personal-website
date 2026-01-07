@@ -722,7 +722,7 @@ main {
 }
 
 .timeline-item::before {
-  content: '';
+ 
   position: absolute;
   left: 24px;
   top: 40px;
@@ -736,7 +736,7 @@ main {
 }
 
 .timeline-item::after {
-  content: '';
+
   position: absolute;
   left: 20px;
   top: 36px;
