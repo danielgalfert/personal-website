@@ -41,7 +41,7 @@ def home(request):
     ctx = {
         "featured_projects": featured_projects,
         "seo": {
-            "title": "Daniel G. Alfert — Data-driven systems and engineering",
+            "title": "Daniel G. Alfert",
             "description": "Generalist software engineer with quantitative depth. Backend, data-driven systems, modeling, and production reliability.",
             "canonical": f"{settings.SITE_URL}/",
         },
