@@ -64,7 +64,7 @@ html, body {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -95,15 +95,31 @@ img {
 }
 
 .container {
-  width: min(var(--container), calc(100% - 48px));
+  max-width: var(--container);
+  width: 100%;
   margin: 0 auto;
   padding: 0 24px;
+  box-sizing: border-box;
+}
+
+@supports (width: min(100px, 50px)) {
+  .container {
+    width: min(var(--container), calc(100% - 48px));
+  }
 }
 
 .reading {
-  width: min(var(--reading), calc(100% - 48px));
+  max-width: var(--reading);
+  width: 100%;
   margin: 0 auto;
   padding: 0 24px;
+  box-sizing: border-box;
+}
+
+@supports (width: min(100px, 50px)) {
+  .reading {
+    width: min(var(--reading), calc(100% - 48px));
+  }
 }
 
 /* Header */
@@ -111,11 +127,17 @@ header.site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250, 250, 249, 0.85);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(250, 250, 249, 0.95);
   border-bottom: 1px solid var(--border-light);
   transition: all 0.3s var(--ease);
+}
+
+@supports (backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) {
+  header.site-header {
+    background: rgba(250, 250, 249, 0.85);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+  }
 }
 
 .nav {
@@ -187,7 +209,10 @@ header.site-header {
 .nav-links a::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: var(--radius);
   background: var(--accent-bg);
   opacity: 0;
@@ -346,6 +371,18 @@ main {
   transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
 
+.hero-profile-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  object-fit: none;
+}
+
 .hero:hover .hero-profile-image {
   transform: scale(1.02);
   box-shadow: var(--shadow);
@@ -486,7 +523,10 @@ main {
 .btn::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: var(--accent-light);
   opacity: 0;
   transition: opacity 0.3s var(--ease);
@@ -560,7 +600,10 @@ main {
 .card::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(135deg, var(--accent-bg), transparent);
   opacity: 0;
   transition: opacity 0.4s var(--ease);
