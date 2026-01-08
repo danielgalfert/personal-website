@@ -7,7 +7,10 @@
     <div class="hero-inner">
       <span class="kicker">CV</span>
       <h1 class="h1">Daniel G. Alfert</h1>
-      <p class="lead">Software engineer. BSc Computer Science & Mathematics, MSc Quantum Information Science.</p>
+      <p class="lead">
+        Quant / data-minded engineer with a math + CS background. MSc Quantum Information Science.
+        I like building practical tools, then stress-testing the assumptions behind them.
+      </p>
 
       <div class="hero-cta">
         <a class="btn" href="{% static 'docs/CV.pdf' %}" target="_blank" rel="noopener"><span>PDF</span></a>
@@ -22,9 +25,13 @@
     </div>
     <div class="card">
       <p class="card-text">
-        Software engineer with experience in quantitative modeling, data systems, and backend services. 
-        Strong foundation in Python-based tooling, statistical methods, and production systems. 
-        Focus on building reliable, maintainable software for data-driven decision support.
+        I’m a recent graduate based in Copenhagen with dual BSc degrees in Mathematics and Computer Science and an MSc in Quantum Information Science.
+        My strengths sit at the intersection of quantitative thinking and engineering execution: statistical modeling (including time series),
+        clear reasoning about uncertainty, and shipping working software (APIs, authentication, deployment).
+      </p>
+      <p class="card-text" style="margin-top: 10px;">
+        I’m looking for junior roles where I can contribute as a Data Scientist / Quantitative Analyst (non-trading) or in data-heavy engineering,
+        and where learning fast is part of the job—not a side project.
       </p>
     </div>
   </section>
@@ -36,23 +43,79 @@
 
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-role">Software Engineer (Part-time)</div>
-        <div class="timeline-meta">Novo Nordisk Foundation Quantum Computing Programme (NQCP) • Jul 2024 – Aug 2025</div>
+        <div class="timeline-role">Software Engineer (Student, Part-time)</div>
+        <div class="timeline-meta">Novo Nordisk — Quantum Computing Programme • Jun 2024 – Aug 2025</div>
         <ul class="bullet-list">
-          <li>Developed Python-based analytical tools and simulation workflows for data-intensive research projects.</li>
-          <li>Built reproducible pipelines for numerical experiments and statistical analysis.</li>
-          <li>Emphasised correctness, documentation, and maintainability of analytical systems.</li>
-          <li>Collaborated with researchers to translate abstract models into practical tooling.</li>
+          <li>Built a greenfield internal knowledge platform for researchers (2-person team, minimal guidance, ~12h/week).</li>
+          <li>Implemented ~80% of the codebase across frontend and backend; focused on reliability and clarity over cleverness.</li>
+          <li>Designed authentication flows using JWT access + refresh tokens with secure HTTP-only cookies.</li>
+          <li>Developed async APIs with FastAPI and managed relational data (~15 tables) using SQLite.</li>
+          <li>Delivered a working prototype deployed on an internal machine for ~50 internal users.</li>
         </ul>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-role">Software Engineering Intern</div>
+        <div class="timeline-role">Applied AI Intern</div>
         <div class="timeline-meta">Avanade • Oct 2022 – Mar 2023</div>
         <ul class="bullet-list">
-          <li>Worked with Python and SQL on data-driven solutions in cloud-based environments.</li>
-          <li>Supported analytics and modelling workflows under structured delivery timelines.</li>
-          <li>Gained experience working in regulated and production-oriented settings.</li>
+          <li>Participated in an internal applied AI program focused on end-to-end delivery rather than isolated modeling.</li>
+          <li>Trained and deployed a computer vision classification model provided via Azure ML to edge devices using Azure agents.</li>
+          <li>Learned first-hand what “deployment constraints” actually mean (foreign machines, agents, and operational friction).</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Master’s Thesis (Research)</div>
+        <div class="timeline-meta">University of Copenhagen • 2025</div>
+        <ul class="bullet-list">
+          <li>Studied how noise impacts Gibbs states prepared by shallow local quantum circuits (k-local, depth O(log n)).</li>
+          <li>Implemented tensor-network simulations in Python using Quimb (systems up to 8 qubits; research-grade experimentation).</li>
+          <li>Focused on depolarizing noise (with discussion of amplitude damping) and formulated an original conjecture.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="h2">Projects</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-role">Time Series Analysis (AR / ARIMA / ARIMAX)</div>
+        <div class="timeline-meta">MSc coursework • Implementation-focused</div>
+        <ul class="bullet-list">
+          <li>Implemented classical time series models (AR, MA, ARIMA, ARIMAX) and explored stepwise model selection.</li>
+          <li>Ran diagnostics including residual checks and heteroskedasticity tests to understand when assumptions break.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Computational Data Analysis</div>
+        <div class="timeline-meta">MSc coursework • Two applied projects</div>
+        <ul class="bullet-list">
+          <li>Regression: built linear models with L1/L2 regularization and tuned hyperparameters via grid search.</li>
+          <li>Unsupervised learning: applied Gaussian Mixture Models to physiological signals (e.g., heart rate, blood pressure) to explore relationships with emotional states.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Personal Infrastructure / Home Lab</div>
+        <div class="timeline-meta">Ongoing</div>
+        <ul class="bullet-list">
+          <li>Run self-hosted services on a Raspberry Pi using Linux, Docker, and systemd.</li>
+          <li>Configured Nginx reverse proxy and HTTPS via Certbot; use Tailscale for secure remote access.</li>
+          <li>Debugged real operational issues (e.g., DNS failures when Pi-hole went offline due to missing fallback DNS).</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">AWS Django Deployment Baseline (this website)</div>
+        <div class="timeline-meta">Personal project</div>
+        <ul class="bullet-list">
+          <li>Deployed a Django site with Gunicorn + Nginx, TLS, static file handling, and sane restart behavior.</li>
+          <li>Set up GitHub Actions to keep deployments repeatable and reduce “it works on my machine” drift.</li>
         </ul>
       </div>
     </div>
@@ -66,19 +129,19 @@
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-role">MSc in Quantum Information Science</div>
-        <div class="timeline-meta">University of Copenhagen • 2023 – 2025</div>
+        <div class="timeline-meta">University of Copenhagen • 2023 – 2026</div>
         <ul class="bullet-list compact">
-          <li>Focus on statistics, modelling, numerical methods, and data analysis.</li>
-          <li>Master thesis centred on statistical approximation and uncertainty analysis.</li>
+          <li>Relevant focus: time series analysis, statistical modeling, computational methods, and research-grade simulation.</li>
+          <li>Thesis: learning local Gibbs states from noisy shallow quantum circuits (tensor networks, Quimb).</li>
         </ul>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-role">Double BSc in Computer Science & Mathematics</div>
+        <div class="timeline-role">BSc in Mathematics and BSc in Computer Science (concurrent)</div>
         <div class="timeline-meta">University of Granada • 2017 – 2023</div>
         <ul class="bullet-list compact">
-          <li>Coursework in probability, statistics, linear algebra, optimisation, and algorithms.</li>
-          <li>Developed strong analytical problem-solving skills.</li>
+          <li>Coursework in probability, statistical inference, linear algebra, algorithms, and stochastic processes.</li>
+          <li>BSc thesis: fundamentals of quantum computing; small algorithm simulations in Qiskit.</li>
         </ul>
       </div>
     </div>
@@ -92,19 +155,30 @@
     <div class="grid cols-2">
       <div class="card">
         <h3 class="card-title">Programming</h3>
-        <p class="card-text">Python (NumPy, Pandas, SciPy), SQL, Django, FastAPI. Backend services and data tooling.</p>
+        <p class="card-text">
+          Python (NumPy, Pandas, scikit-learn, Quimb, Qiskit), C++ (STL; algorithmic practice), JavaScript (Vue).
+          SQL basics (joins, group by) + ORMs.
+        </p>
       </div>
       <div class="card">
-        <h3 class="card-title">Modeling & Analysis</h3>
-        <p class="card-text">Statistical modeling, numerical methods, hypothesis testing, Monte Carlo simulation.</p>
+        <h3 class="card-title">Data & Modeling</h3>
+        <p class="card-text">
+          Time series (AR/ARIMA/ARIMAX), regression (L1/L2), Gaussian Mixture Models, hypothesis testing,
+          Monte Carlo (European option pricing coursework).
+        </p>
       </div>
       <div class="card">
         <h3 class="card-title">Systems</h3>
-        <p class="card-text">AWS, Docker, Nginx, Gunicorn. Production deployment and operational practices.</p>
+        <p class="card-text">
+          Linux, Git/GitHub, GitHub Actions, Docker, Nginx, systemd, TLS/Certbot, reverse proxying, basic operations/debugging.
+        </p>
       </div>
       <div class="card">
-        <h3 class="card-title">Practices</h3>
-        <p class="card-text">Version control, testing, documentation, reproducible workflows, code review.</p>
+        <h3 class="card-title">How I Work</h3>
+        <p class="card-text">
+          I prioritize correctness and maintainability, write things down, and try to make failures loud rather than silent.
+          Comfortable learning in ambiguous environments.
+        </p>
       </div>
     </div>
   </section>
