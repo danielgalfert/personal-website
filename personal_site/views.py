@@ -4,6 +4,16 @@ from django.shortcuts import render
 
 PROJECTS = [
     {
+        "slug": "consultant-matching-system",
+        "title": "AI consultant staffing matcher",
+        "summary": "An end-to-end retrieval pipeline for matching consultants to client engagements based on skills, experience, and project fit.",
+        "tags": ["Python", "LLMs", "RAG", "ChromaDB", "Vector Search", "RRF"],
+        "problem": "Staffing the right consultant on a project relies on tacit knowledge that is hard to surface across a large pool of CVs and past engagements.",
+        "approach": "Built an end-to-end pipeline: CV ingestion and parsing, structured extraction with LLMs, semantic indexing in ChromaDB, hybrid retrieval using reciprocal rank fusion, and an explainability layer that surfaces why each candidate was matched.",
+        "validation": "Iterated on retrieval quality using realistic staffing queries and inspected ranking explanations to confirm matches reflected meaningful overlap rather than surface-level keyword similarity.",
+        "outcome": "A working prototype delivered as a live panel demo, showing how retrieval and explainability can be combined to support staffing decisions."
+    },
+    {
         "slug": "aws-django-deployment",
         "title": "AWS Django deployment baseline",
         "summary": "A small but carefully thought-out production setup for a personal website, focused on reliability rather than complexity.",
@@ -64,6 +74,7 @@ PROJECTS = [
         "outcome": "A 40-page master’s thesis and an original conjecture relating noise strength to thermal state structure."
     },
 ]
+
 
 
 def home(request):

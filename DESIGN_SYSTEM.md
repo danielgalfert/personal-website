@@ -377,3 +377,4 @@ CSS custom properties provide consistent spacing:
 
 **Result:** A website that feels designed by someone technical, not marketed by someone else. Credible, restrained, and focused on signal over decoration.
 
+
