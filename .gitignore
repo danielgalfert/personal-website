@@ -2,3 +2,4 @@ site_env
 DESIGN_SYSTEM.md
 
 ./personal_site/settings.py
+.env
