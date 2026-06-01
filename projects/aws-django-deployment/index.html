@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Django Deployment Baseline — Daniel G. Alfert</title>
+  <meta name="description" content="A reliability-focused production setup for a personal website — Gunicorn, Nginx, TLS, GitHub Actions, AWS.">
+  <link rel="canonical" href="https://danielgalfert.com/projects/aws-django-deployment/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/" aria-current="page">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="reading">
+
+        <section style="padding-block: clamp(2.5rem, 6vw, 4.5rem);">
+          <span class="eyebrow" style="margin-bottom:1.25rem;">Project · Personal</span>
+          <h1 class="h1" style="margin-bottom:1rem;">AWS Django deployment baseline</h1>
+          <p class="lead">A small but carefully considered production setup for a personal website, focused on reliability and sane defaults rather than complexity.</p>
+          <div class="tags" style="margin-top:1.25rem;">
+            <span class="tag">AWS</span><span class="tag">Django</span>
+            <span class="tag">Nginx</span><span class="tag">Gunicorn</span>
+            <span class="tag">TLS</span><span class="tag">Linux</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="case-block">
+            <span class="case-label">Problem</span>
+            <p class="case-text">Deploy a personal website with sensible production defaults — HTTPS, predictable behavior under restarts, correct static file handling — without overengineering or accumulating operational debt.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Approach</span>
+            <p class="case-text">Configured Gunicorn as the application server behind Nginx, with correct static file handling and HTTPS via Let's Encrypt certificates (Certbot). Wired everything together using systemd for process supervision and sane restart behavior. Set up GitHub Actions to make deployments repeatable, reducing "it works on my machine" drift between environments.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Validation</span>
+            <p class="case-text">Manually tested reverse proxy behavior, HTTPS routing, static file permissions, and service restart behavior after failures using curl and browser-based checks. Verified that deployments via the GitHub Actions pipeline produced identical results to manual deploys.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Outcome</span>
+            <p class="case-text">A stable and maintainable deployment baseline that served as the foundation for the personal site and established patterns reusable in future projects. The process also built familiarity with production Linux administration: systemd, Nginx configuration, certificate renewal, and debugging live services.</p>
+          </div>
+
+          <div class="mt-lg">
+            <a class="btn btn-outline btn-sm" href="/projects/">← All projects</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
