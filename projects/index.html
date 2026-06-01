@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Daniel G. Alfert</title>
+  <meta name="description" content="Case studies documenting problem, approach, validation, and outcome. Software, AI, and quantitative projects.">
+  <link rel="canonical" href="https://danielgalfert.com/projects/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/" aria-current="page">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <section style="padding-block: clamp(2.5rem, 6vw, 4.5rem);">
+        <span class="eyebrow" style="margin-bottom:1.25rem;">Projects</span>
+        <h1 class="h1" style="margin-bottom:1rem;">Work</h1>
+        <p class="lead" style="max-width:560px;">Case studies documenting problem, approach, validation, and outcome.</p>
+      </section>
+
+      <!-- FEATURED -->
+      <div class="proj-featured">
+        <a class="card lift proj-card" href="/projects/consultant-matching-system/">
+          <span class="eyebrow" style="margin-bottom:0.75rem;">Featured</span>
+          <div class="card-title">AI consultant staffing matcher</div>
+          <p class="card-desc" style="max-width:600px;">
+            An end-to-end retrieval pipeline for matching consultants to client engagements based on skills, experience, and project fit.
+            Combines LLM extraction, semantic indexing in ChromaDB, and hybrid retrieval via reciprocal rank fusion with an explainability layer.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">LLMs</span>
+            <span class="tag">RAG</span><span class="tag">ChromaDB</span>
+            <span class="tag">Vector Search</span><span class="tag">RRF</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- GRID -->
+      <div class="proj-grid" style="margin-bottom: clamp(2.5rem, 6vw, 4.5rem);">
+
+        <a class="card lift proj-card" href="/projects/data-driven-tooling/">
+          <div class="card-title">Internal research knowledge platform</div>
+          <p class="card-desc">A centralized web tool helping researchers organize papers, models, and ideas in one place.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">FastAPI</span>
+            <span class="tag">Vue.js</span><span class="tag">JWT</span><span class="tag">SQLite</span>
+          </div>
+        </a>
+
+        <a class="card lift proj-card" href="/projects/computer-vision/">
+          <div class="card-title">Computer vision model deployment</div>
+          <p class="card-desc">End-to-end deployment of a CV classification model during an applied AI internship at Avanade.</p>
+          <div class="tags">
+            <span class="tag">Computer Vision</span><span class="tag">Azure</span>
+            <span class="tag">Databricks</span><span class="tag">Model Deployment</span>
+          </div>
+        </a>
+
+        <a class="card lift proj-card" href="/projects/thesis-project/">
+          <div class="card-title">Learning Local Gibbs States from Noisy Shallow Quantum Circuits</div>
+          <p class="card-desc">Research on how noise affects thermal quantum states from shallow circuits. 40-page MSc thesis.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Quimb</span>
+            <span class="tag">Tensor Networks</span><span class="tag">Statistics</span>
+          </div>
+        </a>
+
+        <a class="card lift proj-card" href="/projects/time-series-analysis/">
+          <div class="card-title">Time series analysis and forecasting</div>
+          <p class="card-desc">Hands-on implementation of classical time series models, diagnostics, and model selection.</p>
+          <div class="tags">
+            <span class="tag">Time Series</span><span class="tag">Statistics</span>
+            <span class="tag">Python</span><span class="tag">ARIMA</span>
+          </div>
+        </a>
+
+        <a class="card lift proj-card" href="/projects/computational-data-analysis/">
+          <div class="card-title">Computational data analysis</div>
+          <p class="card-desc">Statistical modeling and unsupervised learning on real datasets — regression with regularization and Gaussian Mixture Models.</p>
+          <div class="tags">
+            <span class="tag">Regression</span><span class="tag">Regularization</span>
+            <span class="tag">GMM</span><span class="tag">Statistics</span><span class="tag">Python</span>
+          </div>
+        </a>
+
+        <a class="card lift proj-card" href="/projects/aws-django-deployment/">
+          <div class="card-title">AWS Django deployment baseline</div>
+          <p class="card-desc">A reliability-focused production setup for a personal website — Gunicorn, Nginx, TLS, GitHub Actions.</p>
+          <div class="tags">
+            <span class="tag">AWS</span><span class="tag">Django</span>
+            <span class="tag">Nginx</span><span class="tag">Gunicorn</span>
+            <span class="tag">TLS</span><span class="tag">Linux</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

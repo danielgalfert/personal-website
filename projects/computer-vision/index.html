@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Vision Model Deployment — Daniel G. Alfert</title>
+  <meta name="description" content="End-to-end deployment of a computer vision classification model during an applied AI internship at Avanade.">
+  <link rel="canonical" href="https://danielgalfert.com/projects/computer-vision/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/" aria-current="page">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="reading">
+
+        <section style="padding-block: clamp(2.5rem, 6vw, 4.5rem);">
+          <span class="eyebrow" style="margin-bottom:1.25rem;">Project · Internship</span>
+          <h1 class="h1" style="margin-bottom:1rem;">Computer vision model deployment</h1>
+          <p class="lead">End-to-end deployment of a CV classification model during an applied AI internship at Avanade.</p>
+          <div class="tags" style="margin-top:1.25rem;">
+            <span class="tag">Computer Vision</span><span class="tag">Azure</span>
+            <span class="tag">Databricks</span><span class="tag">Model Deployment</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="case-block">
+            <span class="case-label">Problem</span>
+            <p class="case-text">A manufacturing use case required detecting defective screws using camera footage. The challenge was not just training a model but getting it to run reliably on edge devices in a production environment.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Approach</span>
+            <p class="case-text">Participated in Avanade's internal applied AI program focused on end-to-end delivery rather than isolated modeling. Trained and validated a classification model provided through Azure ML and deployed it to edge devices using Azure tooling and agents.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Validation</span>
+            <p class="case-text">Evaluated the model using real footage from the production environment to verify correct behavior outside of static test data. The deployment setup was tested against the actual edge device constraints rather than only on controlled hardware.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Outcome</span>
+            <p class="case-text">A deployed model showing how computer vision can reduce manual quality assurance effort. The internship gave first-hand experience of what deployment constraints actually mean: foreign machines, agents, and operational friction that don't appear in research settings.</p>
+          </div>
+
+          <div class="mt-lg">
+            <a class="btn btn-outline btn-sm" href="/projects/">← All projects</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

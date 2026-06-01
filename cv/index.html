@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Daniel G. Alfert</title>
+  <meta name="description" content="Curriculum vitae of Daniel G. Alfert — software and AI engineer with a quantitative background. Experience, education, and skills.">
+  <link rel="canonical" href="https://danielgalfert.com/cv/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/" aria-current="page">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="reading">
+
+        <div class="cv-bar">
+          <span class="eyebrow" style="display:inline;">CV</span>
+          <a class="btn btn-solid btn-sm" href="/assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+          <a class="btn btn-outline btn-sm" href="mailto:danielgalfert@gmail.com">Email</a>
+        </div>
+
+        <section style="padding-block: clamp(2rem, 5vw, 3.5rem) 0;">
+          <h1 class="h1" style="margin-bottom:0.375rem;">Daniel G. Alfert</h1>
+          <span class="eyebrow">Copenhagen · danielgalfert@gmail.com</span>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2 class="h2">Profile</h2>
+          </div>
+          <p style="font-size:0.9375rem; color:var(--muted); line-height:1.8;">
+            Recent graduate based in Copenhagen with dual BSc degrees in Mathematics and Computer Science and an MSc in Quantum Information Science.
+            My strengths sit at the intersection of quantitative thinking and engineering execution: statistical modeling, clear reasoning under uncertainty, and shipping working software — APIs, authentication, deployment.
+          </p>
+          <p style="font-size:0.9375rem; color:var(--muted); line-height:1.8; margin-top:0.875rem;">
+            Looking for roles in AI engineering, model validation, quantitative development, or data and AI consulting, where learning fast and working rigorously are both part of the job.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2 class="h2">Experience</h2>
+          </div>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-role">Software Engineer — Student, Part-time</div>
+              <div class="timeline-meta">Novo Nordisk, Quantum Computing Programme · Jun 2024 – Aug 2025</div>
+              <ul class="timeline-bullets">
+                <li>Built a greenfield internal knowledge platform for researchers (2-person team, minimal guidance, ~12 h/week).</li>
+                <li>Implemented ~80% of the codebase across frontend and backend; focused on reliability and clarity over cleverness.</li>
+                <li>Designed authentication flows using JWT access + refresh tokens with secure HTTP-only cookies.</li>
+                <li>Developed async APIs with FastAPI and managed relational data (~15 tables) using SQLite.</li>
+                <li>Delivered a working prototype deployed on an internal machine for ~50 internal users.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-role">Applied AI Intern</div>
+              <div class="timeline-meta">Avanade · Oct 2022 – Mar 2023</div>
+              <ul class="timeline-bullets">
+                <li>Participated in an internal applied AI program focused on end-to-end delivery rather than isolated modeling.</li>
+                <li>Trained and deployed a computer vision classification model via Azure ML to edge devices using Azure agents.</li>
+                <li>Gained first-hand experience of deployment constraints: foreign machines, agents, and operational friction.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-role">Master's Thesis Research</div>
+              <div class="timeline-meta">University of Copenhagen · 2025</div>
+              <ul class="timeline-bullets">
+                <li>Studied how noise impacts Gibbs states prepared by shallow local quantum circuits (k-local, depth O(log n)).</li>
+                <li>Implemented tensor-network simulations in Python using Quimb (systems up to 8 qubits).</li>
+                <li>Focused on depolarizing noise (with discussion of amplitude damping) and formulated an original conjecture.</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2 class="h2">Projects</h2>
+          </div>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-role">AI Consultant Staffing Matcher</div>
+              <div class="timeline-meta">Personal project · Python, LLMs, RAG, ChromaDB, RRF</div>
+              <ul class="timeline-bullets">
+                <li>End-to-end retrieval pipeline: CV ingestion, structured LLM extraction, semantic indexing in ChromaDB, hybrid retrieval via reciprocal rank fusion, and an explainability layer.</li>
+                <li>Delivered as a live panel demo showing how retrieval and explainability support staffing decisions.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-role">Time Series Analysis (AR / ARIMA / ARIMAX)</div>
+              <div class="timeline-meta">MSc coursework · Implementation-focused</div>
+              <ul class="timeline-bullets">
+                <li>Implemented classical time series models and explored stepwise model selection.</li>
+                <li>Ran diagnostics including residual checks and heteroskedasticity tests.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-role">Computational Data Analysis</div>
+              <div class="timeline-meta">MSc coursework · Two applied projects</div>
+              <ul class="timeline-bullets">
+                <li>Regression: linear models with L1/L2 regularization, hyperparameter tuning via grid search.</li>
+                <li>Unsupervised learning: Gaussian Mixture Models on physiological signals to explore relationships with emotional states.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-role">Home Lab</div>
+              <div class="timeline-meta">Ongoing · Linux, Docker, Nginx, Tailscale</div>
+              <ul class="timeline-bullets">
+                <li>Self-hosted services on a Raspberry Pi using Linux, Docker, and systemd.</li>
+                <li>Nginx reverse proxy and HTTPS via Certbot; Tailscale for secure remote access.</li>
+                <li>Debugged real operational issues (e.g., DNS failures when Pi-hole went offline).</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2 class="h2">Education</h2>
+          </div>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-role">MSc in Quantum Information Science</div>
+              <div class="timeline-meta">University of Copenhagen · 2023 – 2026</div>
+              <ul class="timeline-bullets">
+                <li>Relevant focus: time series analysis, statistical modeling, computational methods, research-grade simulation.</li>
+                <li>Thesis: learning local Gibbs states from noisy shallow quantum circuits (tensor networks, Quimb).</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-role">BSc in Mathematics and BSc in Computer Science (concurrent)</div>
+              <div class="timeline-meta">University of Granada · 2017 – 2023</div>
+              <ul class="timeline-bullets">
+                <li>Coursework in probability, statistical inference, linear algebra, algorithms, and stochastic processes.</li>
+                <li>BSc thesis: fundamentals of quantum computing; small algorithm simulations in Qiskit.</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2 class="h2">Skills</h2>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <span class="skill-name">Programming</span>
+              <p class="skill-body">Python (NumPy, Pandas, scikit-learn, Quimb, Qiskit), C++ (STL; algorithmic practice), JavaScript (Vue). SQL basics + ORMs.</p>
+            </div>
+            <div class="card">
+              <span class="skill-name">Data &amp; Modeling</span>
+              <p class="skill-body">Time series (AR/ARIMA/ARIMAX), regression (L1/L2), Gaussian Mixture Models, hypothesis testing, Monte Carlo (European option pricing coursework).</p>
+            </div>
+            <div class="card">
+              <span class="skill-name">Systems</span>
+              <p class="skill-body">Linux, Git/GitHub, GitHub Actions, Docker, Nginx, systemd, TLS/Certbot, reverse proxying, LLM APIs, vector databases.</p>
+            </div>
+            <div class="card">
+              <span class="skill-name">How I work</span>
+              <p class="skill-body">Prioritize correctness and maintainability, write things down, make failures loud rather than silent. Comfortable in ambiguous environments.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2 class="h2">Languages</h2>
+          </div>
+          <div class="card" style="display:inline-flex; gap:1.5rem; padding:1rem 1.5rem;">
+            <span style="font-size:0.875rem;"><strong>English</strong> — Fluent</span>
+            <span style="font-size:0.875rem;"><strong>Spanish</strong> — Native</span>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

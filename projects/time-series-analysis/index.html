@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Series Analysis and Forecasting — Daniel G. Alfert</title>
+  <meta name="description" content="Hands-on implementation of classical time series models (AR, ARIMA, ARIMAX), diagnostics, and model selection as part of MSc coursework.">
+  <link rel="canonical" href="https://danielgalfert.com/projects/time-series-analysis/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/" aria-current="page">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="reading">
+
+        <section style="padding-block: clamp(2.5rem, 6vw, 4.5rem);">
+          <span class="eyebrow" style="margin-bottom:1.25rem;">Project · MSc Coursework</span>
+          <h1 class="h1" style="margin-bottom:1rem;">Time series analysis and forecasting</h1>
+          <p class="lead">Hands-on implementation of classical time series models as part of advanced MSc coursework — focused on understanding model behavior in practice, not just in theory.</p>
+          <div class="tags" style="margin-top:1.25rem;">
+            <span class="tag">Time Series</span><span class="tag">Statistics</span>
+            <span class="tag">Python</span><span class="tag">ARIMA</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="case-block">
+            <span class="case-label">Problem</span>
+            <p class="case-text">Understand how classical time series models behave in practice — when their assumptions hold, when they break, and how to diagnose failures from the data rather than from textbook descriptions.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Approach</span>
+            <p class="case-text">Implemented AR, MA, ARIMA, and ARIMAX models from scratch, including stepwise model selection procedures. Ran full diagnostic suites: residual analysis, autocorrelation checks, and heteroskedasticity tests (ARCH effects). Explored model selection criteria and the trade-offs between model complexity and generalization.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Validation</span>
+            <p class="case-text">Compared model behavior across different datasets and applied hold-out evaluation to distinguish in-sample fit from out-of-sample performance. Checked that residuals satisfied model assumptions before accepting any fit as valid.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Outcome</span>
+            <p class="case-text">A much more grounded understanding of time series modeling and its limitations on real data — particularly around non-stationarity, seasonal effects, and when classical models are and are not appropriate.</p>
+          </div>
+
+          <div class="mt-lg">
+            <a class="btn btn-outline btn-sm" href="/projects/">← All projects</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

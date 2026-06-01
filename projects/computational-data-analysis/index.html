@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computational Data Analysis — Daniel G. Alfert</title>
+  <meta name="description" content="Applied statistical modeling and unsupervised learning on real datasets — regression with regularization and Gaussian Mixture Models.">
+  <link rel="canonical" href="https://danielgalfert.com/projects/computational-data-analysis/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/" aria-current="page">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="reading">
+
+        <section style="padding-block: clamp(2.5rem, 6vw, 4.5rem);">
+          <span class="eyebrow" style="margin-bottom:1.25rem;">Project · MSc Coursework</span>
+          <h1 class="h1" style="margin-bottom:1rem;">Computational data analysis</h1>
+          <p class="lead">Applied statistical modeling and unsupervised learning on real datasets — two projects covering regression with regularization and Gaussian Mixture Models.</p>
+          <div class="tags" style="margin-top:1.25rem;">
+            <span class="tag">Regression</span><span class="tag">Regularization</span>
+            <span class="tag">GMM</span><span class="tag">Statistics</span><span class="tag">Python</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="case-block">
+            <span class="case-label">Problem</span>
+            <p class="case-text">Explore how different statistical models behave when applied to noisy, real-world data — specifically how regularization affects regression and how mixture models handle physiological signal data.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Approach</span>
+            <p class="case-text">
+              <strong>Project 1 — Regression:</strong> Built linear regression models with L1 (Lasso) and L2 (Ridge) regularization and tuned hyperparameters via grid search. Investigated how regularization strength affects coefficient sparsity, prediction error, and model interpretability.
+            </p>
+            <p class="case-text" style="margin-top:0.75rem;">
+              <strong>Project 2 — Unsupervised learning:</strong> Applied Gaussian Mixture Models to physiological signal data (heart rate, blood pressure, skin conductance) to explore whether clusters correspond to distinct emotional states. Fit models with varying numbers of components and evaluated using BIC and cluster coherence.
+            </p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Validation</span>
+            <p class="case-text">Evaluated model behavior through error metrics, parameter sensitivity analysis, and qualitative inspection of learned clusters. Checked for overfitting by comparing training and held-out performance, and examined whether identified clusters had interpretable structure.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Outcome</span>
+            <p class="case-text">Practical experience translating statistical theory into working models and interpreting results with appropriate caution — including recognizing when apparent patterns in unsupervised outputs are not supported by the data.</p>
+          </div>
+
+          <div class="mt-lg">
+            <a class="btn btn-outline btn-sm" href="/projects/">← All projects</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

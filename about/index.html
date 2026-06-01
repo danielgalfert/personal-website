@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Daniel G. Alfert</title>
+  <meta name="description" content="Background and approach: dual BSc in Mathematics and Computer Science, MSc in Quantum Information Science, production engineering experience, and a focus on quantitative methods.">
+  <link rel="canonical" href="https://danielgalfert.com/about/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/" aria-current="page">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <section style="padding-block: clamp(2.5rem, 6vw, 4.5rem);">
+        <span class="eyebrow" style="margin-bottom:1.25rem;">About</span>
+        <h1 class="h1" style="margin-bottom:1rem;">Background</h1>
+        <p class="lead" style="max-width:600px;">
+          Engineer working across backend systems, data analysis, and quantitative modeling.
+          Interested in roles at the intersection of rigorous mathematics and real-world systems.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="about-layout">
+          <div>
+            <img
+              class="about-photo"
+              src="/assets/img/profile.jpg"
+              alt="Daniel G. Alfert"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            >
+            <div class="about-photo-fallback" style="display:none;">DA</div>
+          </div>
+
+          <div class="about-prose">
+            <h2>Formation</h2>
+            <p>
+              I studied Mathematics and Computer Science concurrently at the University of Granada, earning a dual BSc that gave me a grounding in probability, statistical inference, linear algebra, algorithms, and stochastic processes. The pairing was deliberate: I wanted to be rigorous about the mathematics underlying computation, not just a practitioner of either.
+            </p>
+            <p>
+              That led me to quantum computing. My BSc thesis covered the fundamentals of quantum computation, and I subsequently moved to Copenhagen to pursue an MSc in Quantum Information Science at the University of Copenhagen. My master's thesis studied how noise affects Gibbs states prepared by shallow local quantum circuits, using tensor-network simulation in Python with Quimb.
+            </p>
+
+            <h2>Engineering</h2>
+            <p>
+              Alongside the MSc, I spent over a year at the Novo Nordisk Quantum Computing Programme as a part-time student engineer, building a greenfield internal knowledge platform for researchers — a two-person team with minimal supervision. I implemented roughly 80% of the codebase, covering a FastAPI backend, JWT authentication with HTTP-only cookies, async APIs, and a Vue.js frontend. The experience sharpened my instincts around correctness, maintainability, and the gap between a working prototype and a reliable system.
+            </p>
+            <p>
+              Before that, I completed an applied AI internship at Avanade, where I trained and deployed a computer vision classification model to edge devices via Azure ML — a first-hand lesson in what deployment constraints actually feel like.
+            </p>
+
+            <h2>Orientation</h2>
+            <p>
+              I am interested in roles where quantitative reasoning and engineering execution are both required — AI engineering, model validation, quantitative development, and data and AI consulting. The problems I find most engaging sit at the boundary between mathematical modeling and production software: designing systems that compute something meaningful and can be trusted to do so reliably.
+            </p>
+            <p>
+              I am direct and precise in communication, sceptical of oversimplification, and try to make my assumptions explicit. I prefer fewer, higher-quality outputs to frequent, shallow ones.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

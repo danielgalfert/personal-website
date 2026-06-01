@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Research Knowledge Platform — Daniel G. Alfert</title>
+  <meta name="description" content="A centralized web tool helping researchers organize papers, models, and ideas in one place. FastAPI, Vue.js, JWT, SQLite.">
+  <link rel="canonical" href="https://danielgalfert.com/projects/data-driven-tooling/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav-brand" href="/">
+        <span class="nav-mark" aria-hidden="true">DA</span>
+        <span class="nav-name">Daniel G. Alfert</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/projects/" aria-current="page">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="reading">
+
+        <section style="padding-block: clamp(2.5rem, 6vw, 4.5rem);">
+          <span class="eyebrow" style="margin-bottom:1.25rem;">Project</span>
+          <h1 class="h1" style="margin-bottom:1rem;">Internal research knowledge platform</h1>
+          <p class="lead">A centralized web tool helping researchers organize papers, models, and ideas in one place. Built at Novo Nordisk as a 2-person team with minimal guidance.</p>
+          <div class="tags" style="margin-top:1.25rem;">
+            <span class="tag">Python</span><span class="tag">FastAPI</span>
+            <span class="tag">Vue.js</span><span class="tag">JWT</span><span class="tag">SQLite</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="case-block">
+            <span class="case-label">Problem</span>
+            <p class="case-text">Researchers lacked a simple way to keep track of papers, models, and open questions across different projects and teams. Knowledge was scattered across emails, shared drives, and individuals' local notes.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Approach</span>
+            <p class="case-text">Built a modular web application with a clear entity structure and tree-based navigation. Designed and implemented authentication from scratch using JWT access and refresh tokens with secure HTTP-only cookies. Exposed async APIs using FastAPI and managed relational data across ~15 tables using SQLite. Implemented roughly 80% of the codebase across frontend and backend (~12 h/week alongside the MSc).</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Validation</span>
+            <p class="case-text">Tested core flows manually and through sanity checks, with particular attention to authentication and data consistency to avoid silent failures. Iterated with the research team to ensure the data model matched actual usage patterns.</p>
+          </div>
+          <div class="case-block">
+            <span class="case-label">Outcome</span>
+            <p class="case-text">A working internal prototype deployed on an internal machine for ~50 users, making it easier for researchers to find, relate, and build on their own tools and knowledge.</p>
+          </div>
+
+          <div class="mt-lg">
+            <a class="btn btn-outline btn-sm" href="/projects/">← All projects</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> Daniel G. Alfert</span>
+        <div class="footer-links">
+          <a href="mailto:danielgalfert@gmail.com">Email</a>
+          <a href="https://github.com/danielgalfert" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-gonz%C3%A1lvez-alfert-a828931b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
